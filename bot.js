@@ -72,7 +72,7 @@ if (message.content === '!spam') {
       let count = 0;
       let ecount = 0;
       for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Credit Spam , Frame , Credit By Kahrba , Farm Credit By Kahrba, ez Farm - كردت اسبام اسبام اسبام اوف ءف اح اح نار ج **[ " ${x} " ]`)
+        message.channel.send(`**star spam bots help me to get good stuff i love you i love me u love eevryone  but i love you u cant help me so i cant love you so i only love my self but i love you alot how doeal with it wahahahhahah **[ " ${x} " ]`)
           .then(m => {
             count++;
           })
