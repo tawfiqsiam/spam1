@@ -80,7 +80,43 @@ if (message.content === '!spam') {
         }
       }
 });
+client2.on('message', message => {
+    if(message.content === '-ستار'){
+        message.channel.send('#credit @star#5087 1000')
+    }
+});
 
+     client.on('message', message => {
+    var prefix = "+";
+
+      if (message.author.bot) return;
+      if (!message.content.startsWith(!)) return;
+     
+      let command = message.content.split(" ")[0];
+      command = command.slice(prefix.length);
+     
+      let args = message.content.split(" ").slice(1);
+     
+      if (command === "say") {
+              message.delete()
+        message.channel.sendMessage(args.join(" ")).catch(console.error);
+      }
+       
+      
+     
+    if (command == "embed") {
+        let say = new Discord.RichEmbed()
+        .setDescription(args.join("  "))
+        .setColor(0x23b2d6)
+        message.channel.sendEmbed(say);
+        message.delete();
+      }
+     
+     
+    });
+     
+   
+       
 
 
 
