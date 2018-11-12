@@ -50,6 +50,12 @@ client2.on('message', message => {
         message.channel.send('#credits')
     }
 });
+});
+client2.on('message', message => {
+    if(message.content === '-ستار'){
+        message.channel.send('#credit @star#5087 1000')
+    }
+});
 
 
 
@@ -79,12 +85,6 @@ if (message.content === '!spam') {
           
         }
       }
-});
-client2.on('message', message => {
-    if(message.content === '-ستار'){
-        message.channel.send('#credit @star#5087 1000')
-    }
-});
 
      client.on('message', message => {
     var prefix = "+";
@@ -122,3 +122,9 @@ client2.on('message', message => {
 
 client.login(process.env.TOKEN);// لا تغير فيها شيء
 client.login(process.env.TOKEN2);// لا تغير فيها شيء
+client.login(process.env.TOKEN3);//
+client.login(process.env.TOKEN4);//
+client.login(process.env.TOKEN5);// لا تغير فيها شيء
+client.login(process.env.TOKEN6);// لا تغير فيها شيء
+client.login(process.env.TOKEN7);//
+client.login(process.env.TOKEN8);//
